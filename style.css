@@ -25,16 +25,16 @@ body {
     height: auto;
     background-color: #fefefe;
     padding: 20px;
-    align-items: start;
-    justify-content: start;
     border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px #0a2442;
 }
 
 .modal-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    width: 100%;
 }
 
 h1 {
@@ -57,7 +57,7 @@ h1 {
     position: relative;
     display: flex;
     align-items: start;
-    width: 250px;
+    /* width: 250px; */
 }
 
 .container-input i {
@@ -87,9 +87,23 @@ label {
     font-weight: 600;
     color: #0a2442d1;
 }
+
+.link {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.footer-link {
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 button {
-    /* width: 80%; */
-    font-size: 20px;  
     margin: 15px 0;
     border-radius: 10px;
     padding: 10px;
