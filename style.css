@@ -16,22 +16,17 @@ body {
     align-items: center;
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 3rem;
-}
-
 .modal {
-    /* display: none; */
+    display: none;
     z-index: 1;
     left: 0;
     top: 0;
-    width: 300px;
+    width: 30%;
     height: auto;
     background-color: #fefefe;
     padding: 20px;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
     border-radius: 10px;
 }
 
@@ -40,6 +35,22 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #0a2442;
+    margin: 0;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+}
+.logo img {
+    height: 100px;
+    width: 100px;
 }
 
 .container-input {
@@ -54,30 +65,34 @@ h1 {
     right: 10px ;
 }
 input {
-    margin: 15px 0;
+    border: 2px solid #0a2442;
     border-radius: 10px;
-    padding: 10px;
-    font-size: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
     width: 280px;
-    background-color: aqua;
 }
 
 .input-field {
-    margin: 20px 0;
-    border: none;
+    margin: 10px 0;
+    
     outline: none;
 }
 
-.input-field:focus {
+/* .input-field:focus {
     border: none;
-}
+} */
 
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0a2442d1;
+}
 button {
-    width: 80%;
+    /* width: 80%; */
     font-size: 20px;  
     margin: 15px 0;
     border-radius: 10px;
     padding: 10px;
-    background: blue;
+    background: #0a2442;
     color: #fefefe;  
 }
