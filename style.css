@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -15,57 +16,68 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
 .modal {
-    display: none;
+    /* display: none; */
     z-index: 1;
     left: 0;
     top: 0;
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    height: auto;
     background-color: #fefefe;
     padding: 20px;
     align-items: center;
     justify-content: center;
-
-    .container-input {
-        position: relative;
-        display: flex;
-        align-items: center;
-        width: 250px;
-    }
-
-    .container-input i {
-        position: absolute;
-        right: 10px ;
-    }
-    input {
-        margin: 15px 0;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 20px;
-        width: 80%;
-        background: transparent;
-    }
-
-    .input-field {
-        margin: 20px 0;
-        border: none;
-        outline: none;
-    }
-
-    .input-field:focus {
-        border: none;
-    }
-    
-    button {
-        width: 80%;
-        font-size: 20px;  
-        margin: 15px 0;
-        border-radius: 10px;
-        padding: 10px;
-        background: blue;
-        color: #fefefe;  
-    }
-
+    border-radius: 10px;
 }
 
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.container-input {
+    position: relative;
+    display: flex;
+    align-items: start;
+    width: 250px;
+}
+
+.container-input i {
+    position: absolute;
+    right: 10px ;
+}
+input {
+    margin: 15px 0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    width: 280px;
+    background-color: aqua;
+}
+
+.input-field {
+    margin: 20px 0;
+    border: none;
+    outline: none;
+}
+
+.input-field:focus {
+    border: none;
+}
+
+button {
+    width: 80%;
+    font-size: 20px;  
+    margin: 15px 0;
+    border-radius: 10px;
+    padding: 10px;
+    background: blue;
+    color: #fefefe;  
+}
