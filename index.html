@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>login</title>
+    <title>Login</title>
 </head>
 <body>
     <section class="container">
-        
-        <div class="wrapper">
-            <h1>Login</h1>
-            <label for="email"></label>
-            <div class="container-input">
-                <input type="email" placeholder="email" name="uname" class="input-field" required>
-                <i class="fa-solid fa-user"></i>
+        <button id="modal">Continue</button>
+
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <h1>Login</h1>
+                <label for="email"></label>
+                <div class="container-input">
+                    <input type="email" placeholder="email" name="uname" class="input-field" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <label for="password"></label>
+                <div class="container-input">
+                    <input type="password" placeholder="password" name="password" class="input-field" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button type="submit" id="submit">Login</button>
+                <button id="close">Close</button> <!-- Bouton de fermeture -->
             </div>
-            <label for="password"></label>
-            <div class="container-input">
-                <input type="password" placeholder="password" name="uname" class="input-field" required>
-                <i class="fa-solid fa-lock"></i>
-            </div>
-            
-            <button type="submit" id="submit">Login</button>
         </div>
-        
     </section>
 
     <script src="main.js"></script>
