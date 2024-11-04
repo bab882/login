@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: "Poppins", sans-serif;
 }
 
@@ -21,7 +21,6 @@ body {
     z-index: 1;
     left: 0;
     top: 0;
-    width: 30%;
     height: auto;
     background-color: #fefefe;
     padding: 20px;
@@ -56,14 +55,21 @@ h1 {
 .container-input {
     position: relative;
     display: flex;
-    align-items: start;
-    /* width: 250px; */
+    align-items: center;
 }
 
 .container-input i {
     position: absolute;
-    right: 10px ;
+    right: 15px;
+    font-size: 14px;
+    cursor: pointer;
 }
+
+.container-input i.active::before {
+    content: '\f070';
+    color: #0a2442;
+}
+
 input {
     border: 2px solid #0a2442;
     border-radius: 10px;
@@ -74,13 +80,12 @@ input {
 
 .input-field {
     margin: 10px 0;
-    
     outline: none;
 }
 
-/* .input-field:focus {
-    border: none;
-} */
+.input-field:focus {
+    border: 2px solid rgba(238,174,202,1);
+}
 
 label {
     font-size: 16px;

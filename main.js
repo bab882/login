@@ -1,7 +1,18 @@
 const modal = document.querySelector(".modal");
 const btn = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
+let input = document.querySelector(".container-input .password");
+let showBtn = document.querySelector(".fa-eye");
 
+showBtn.onclick = function() {
+  if(input.type === "password") {
+    input.type = "text";
+    showBtn.classList.add("active");
+  } else {
+    input.type = "password";
+    showBtn.classList.remove("active");
+  }
+}
 
 btn.onclick = function () {
   modal.style.display = "flex";
