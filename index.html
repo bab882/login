@@ -12,14 +12,13 @@
 </head>
 <body>
     <section class="container">
-        <button id="modal">Continue</button>
+        <!-- <button id="modal">Continue</button> -->
 
         <form class="modal" id="myModal">
             <div class="modal-content">
                 <div class="logo">
                     <img src="logo.png" alt="">
                 </div>
-                
                 <h1>Login</h1>
                 <div class="container-input">
                     <input type="email" placeholder="exemple@gmail.com" name="uname" class="input-field" required>
@@ -33,13 +32,42 @@
                     <button type="submit" id="submit">Let's Get Started</button>
                     <a href="#">Forgot Password ?</a>
                 </div>
-                
                 <div class="footer-link">Need an account ? 
                     <a href="#">Sign Up</a>
                 </div>
                 <!-- <button id="close">X</button> -->
             </div>
         </form>
+
+        <form class="modal2" id="myModal2">
+            <div class="modal-content">
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <h1>Sign In</h1>
+                <div class="container-input">
+                    <input type="name" placeholder="Name" class="input-field" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                
+                <div class="container-input">
+                    <input type="email" placeholder="exemple@gmail.com" class="input-field" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="container-input">
+                    <input type="password" placeholder="Password"  class="input-field password" required>
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="link">
+                    <button type="submit" id="submit">Let's Get Started</button>
+                </div>
+                <div class="footer-link">Already have an account? 
+                    <a href="#">Log In</a>
+                </div>
+                <!-- <button id="close">X</button> -->
+            </div>
+        </form>
+
     </section>
 
     <script src="main.js"></script>

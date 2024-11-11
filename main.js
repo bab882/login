@@ -1,5 +1,8 @@
 const modal = document.querySelector(".modal");
 const btn = document.getElementById("modal");
+
+const modalSignin = document.querySelector(".modal2");
+
 const closeBtn = document.getElementById("close");
 let input = document.querySelector(".container-input .password");
 let showBtn = document.querySelector(".fa-eye");
