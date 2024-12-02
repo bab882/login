@@ -1,36 +1,56 @@
-const modal = document.querySelector(".modal");
-const btn = document.getElementById("modal");
+document.addEventListener('DOMContentLoaded', function() {
 
-const modalSignin = document.querySelector(".modal2");
+  // Sélection des éléments
+  const login = document.getElementById("loginModal");
+  const signup = document.getElementById("signupModal");
+  const btn = document.getElementById("modal");
 
-const closeBtn = document.getElementById("close");
-let input = document.querySelector(".container-input .password");
-let showBtn = document.querySelector(".fa-eye");
+  let input = document.querySelector(".container-input .password");
+  let showBtn = document.querySelector(".fa-eye");
 
-showBtn.onclick = function() {
-  if(input.type === "password") {
-    input.type = "text";
-    showBtn.classList.add("active");
-  } else {
-    input.type = "password";
-    showBtn.classList.remove("active");
+  showBtn.onclick = function() {
+    if(input.type === "password") {
+      input.type = "text";
+      showBtn.classList.add("active");
+    } else {
+      input.type = "password";
+      showBtn.classList.remove("active");
+    }
   }
-}
 
-btn.onclick = function () {
-  modal.style.display = "flex";
-  btn.style.display = "none";
-};
+  btn.onclick = function () {
+    login.style.display = "flex";
+    btn.style.display = "none";
+  };
 
-closeBtn.onclick = function () {
-  modal.style.display = "none";
-  btn.style.display = "inline-block";
-};
+  window.onclick = function (event) {
+    if (event.target === signup) {
+      signup.style.display = "none";
+      console.log('bonjour');
+    }
+    if (event.target === login) {
+      login.style.display = "none";
+    }
+  };
 
-
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
-    btn.style.display = "inline-block";
+  document.getElementById("openSignup").onclick = function(){
+    login.style.display = "none";
+    signup.style.display = "flex";
   }
-};
+
+  document.getElementById("openLogin").onclick = function(){
+    signup.style.display = "none";
+    login.style.display = "flex";
+  }
+
+  document.getElementById("closeLogin").onclick = function(){
+    login.style.display = "none";
+  }
+
+  document.getElementById("closeSignup").onclick = function(){
+    signup.style.display = "none";
+  }
+
+  login.style.display = "none";
+  signup.style.display = "none";
+});
