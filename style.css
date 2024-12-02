@@ -99,11 +99,26 @@ h1 {
     align-items: center;
 }
 
-button {
+#modal,
+#submit,
+#submit2 {
     margin: 15px 0;
     border-radius: 10px;
     font-weight: bold;
     padding: 10px;
     background: #0a2442;
-    color: #fefefe;  
+    color: #fefefe;
+    cursor: pointer;
 }
+
+#openSignup,
+#openLogin,
+a {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #7A4DFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+

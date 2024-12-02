@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
   window.onclick = function (event) {
     if (event.target === signup) {
       signup.style.display = "none";
-      console.log('bonjour');
     }
     if (event.target === login) {
       login.style.display = "none";
